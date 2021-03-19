@@ -1,0 +1,14 @@
+POST http://localhost:8080/api/v1/registration
+Content-Type: application/json
+
+< RegistrationRequest.json
+
+###
+
+# 랜덤 UUID 이기 때문에 위에서 전송 받은 토큰을 가지고 해야 합니다
+POST http://localhost:8080/api/v1/registration/confirm
+Content-Type: application/x-www-form-urlencoded
+
+token=a7a1866c-a87a-4114-bf68-7183a8753707
+
+###
